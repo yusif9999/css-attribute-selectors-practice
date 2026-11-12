@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Web Design Workshop - Registration</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <i class="fa-solid fa-code"></i>
+            Web Design Workshop
+        </h1>
+        <p>Free weekend HTML & CSS workshop</p>
+    </header>
+    <main>
+        <section id="atolyeler">
+            <h3>Workshops</h3>
+            <ul>
+                <li>
+                    <span title="For beginners">HTML Basics</span>
+                    <small>Saturday 10:00</small>
+                </li>
+                <li>
+                    <span title="Some HTML knowledge required">Page Design with CSS</span>
+                    <small>Saturday 14:00</small>
+                </li>
+                <li>
+                    <span title="HTML and CSS knowledge required">Responsive Menus</span>
+                    <small>Sunday 11:00</small>
+                </li>
+            </ul>
+        </section>
+        <section class="form">
+            <h3>Registration Form</h3>
+            <form action="#">
+                <div>
+                    <label for="nameSurname">Full Name *</label>
+                    <input type="text" id="nameSurname" placeholder="e.g. Jane Smith" required>
+                </div>
+                <div>
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" placeholder="example@mail.com" required>
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="05xx xxx xx xx">
+                </div>
+                <div>
+                    <label for="birthday">Date of Birth</label>
+                    <input type="date" id="birthday" max="2008-12-31">
+                </div>
+                <div>
+                    <label for="atolyeSecimi">Workshop *</label>
+                    <select id="atolyeSecimi" required>
+                        <option value="0" selected disabled>Select</option>
+                        <option value="1">HTML Basics</option>
+                        <option value="2">Page Design with CSS</option>
+                        <option value="3">Responsive Menus</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" placeholder="Istanbul" id="city" disabled>
+                </div>
+                <div>
+                    <label for="note">Your Note</label>
+                    <textarea id="note" placeholder="Anything you'd like to add..." rows="5"></textarea>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="rules">
+                    <label for="rules">I have read the participation rules.</label>
+                </div>
+                <div class="btnGroup">
+                    <button type="submit">Register</button>
+                    <button type="reset">Clear</button>
+                </div>
+            </form>
+        </section>
+        <section id="contact">
+            <h3>Resources & Contact</h3>
+            <ul>
+                <li>
+                    <a href="pdf/atolye-programi.pdf">Workshop Schedule</a>
+                </li>
+                <li>
+                    <a href="#">Starter Files</a>
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/tr/">MDN Web Docs</a>
+                </li>
+                <li>
+                    <a href="mailto:info@atolye.com">info@atolye.com</a>
+                </li>
+                <li>
+                    <a href="tel:+902120000000">0212 000 00 00</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <small>© 2026 Web Design Workshop</small>
+    </footer>
+</body>
+</html>

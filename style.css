@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f8;
+    color: #333;
+}
+
+header{
+    padding: 36px 0;
+    background-color: #162c37;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    h1{
+        margin-bottom: 20px;
+    }
+    p{
+        opacity: 0.8;
+        
+    }
+}
+
+main{
+    max-width: 700px;
+    margin: 30px auto;
+
+    [id="atolyeler"]{
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border: 1px solid #e1e4ea;
+        border-radius: 5px;
+        margin-bottom: 25px;
+        h3{
+            padding-bottom: 10px;
+            border-bottom: 2px solid #66ccff;
+        }
+        ul{
+            padding-top: 20px;
+            li{
+                padding: 15px;
+                background-color: #eee;
+                margin-bottom: 10px;
+                &:first-child{
+                    border-left: 5px solid #57dbaf;
+                }
+                &:nth-child(2){
+                    border-left: 5px solid #ff9966;
+                }
+                &:last-child{
+                    border-left: 5px solid #e62e00;
+                }
+                [title]{
+                    border-bottom: 1px dashed #555;
+                    cursor: help;
+                    padding-bottom: 3px;
+                }
+                small{
+                    float: right;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    [class="form"]{
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border: 1px solid #e1e4ea;
+        border-radius: 5px;
+        margin-bottom: 25px;
+        h3{
+            padding-bottom: 10px;
+            border-bottom: 2px solid #66ccff;
+        }
+        form{
+            padding-top: 20px;
+            div{
+                margin-bottom: 15px;
+                label{
+                    display: block;
+                    font-weight: bold;
+                    font-size: 14px;
+                    padding-bottom: 8px;
+                }
+                input,select{
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    width: 100%;
+                    border-radius: 5px;
+                    &:focus{
+                        outline: 2px solid #66ccff;
+                        border-color: #66ccff;
+                    }
+                }
+                input[required], select[required]{
+                    border-left: 4px solid #e62e00;
+                }
+                input[placeholder="İstanbul"]{
+                    background-color: #eee;
+                    cursor: no-drop;
+                }
+                [id="note"]{
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    &:focus{
+                        outline: 2px solid #66ccff;
+                        border-color: #66ccff;
+                    }
+                }
+            }
+            .checkbox{
+                display: flex;
+                align-items: center;
+                [type="checkbox"]{
+                    width: auto;
+                    margin-right: 5px;
+                }
+                [for="rules"]{
+                    padding-bottom: 0;
+                }
+            }
+            .btnGroup{
+                margin-top: 25px;
+                button{
+                    padding: 12px 24px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    color: #fff;
+                    font-size: 15px;
+                }
+                [type="submit"]{
+                    background-color: #4992b6;
+                    &:hover{
+                        background-color: rgba(73, 146, 182, 0.8);
+                    }
+                }
+                [type="reset"]{
+                    background-color: #85adad;
+                    &:hover{
+                        background-color: rgba(133, 173, 173, 0.8);
+                    }
+                }
+            }
+        }
+    }
+
+    [id="contact"]{
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border: 1px solid #e1e4ea;
+        border-radius: 5px;
+        margin-bottom: 25px;
+        h3{
+            padding-bottom: 10px;
+            border-bottom: 2px solid #66ccff;
+        }
+        ul{
+            padding-top: 20px;
+            li{
+                a{
+                    color: #333;
+                    display: block;
+                    padding: 15px;
+                    background-color: #eee;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #eef5fc;
+                    }
+                }
+                a[href$=".pdf"]{
+                    font-weight: bold;
+                    border-left: 5px solid #e62e00;
+                }
+                a[href*="#"]{
+                    font-weight: bold;
+                    border-left: 5px solid orange;
+                }
+                a[href^="https"]{
+                    border-left: 5px solid #66ccff;
+                    font-style: italic;
+                }
+                a[href^="mailto"]{
+                    border-left: 5px solid magenta;
+                }
+                a[href^="tel:"]{
+                    border-left: 5px solid #57dbaf;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    padding: 20px 0;
+    background-color: #162c37;
+    small{
+        display: block;
+        text-align: center;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+}
